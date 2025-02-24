@@ -1,0 +1,356 @@
+/* =====================================================
+   application.css
+   ===================================================== */
+
+/* =============== Welcome Controller Styles =============== */
+
+body {
+    overflow-x: hidden; /* 裁切页面内容，超出视窗不显示 */
+    letter-spacing: 1px; /* 文字间距 */
+    font-size: 14px; /* 文字大小 */
+    position: relative; /* 设定为相对位置 */
+  }
+  
+  body a {
+    text-decoration: none !important; /* 文字连结移除底线 */
+  }
+  
+  body .width-25 {
+    width: 25%;
+  }
+  
+  body .width-50 {
+    width: 50%;
+  }
+  
+  body .width-75 {
+    width: 75%;
+  }
+  
+  body .width-100 {
+    width: 100%;
+  }
+  
+  /*===== Navbar 导览列 =====*/
+  .navbar-default {
+    background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  }
+  
+  .navbar-default a {
+    color: #fff !important;
+    float: left;
+    font-size: 19px;
+    line-height: 19px;
+    max-height: 70px;
+  }
+  
+  .navbar-default a:hover,
+  .navbar-default a:active,
+  .navbar-default a:focus {
+    color: #0070DE !important;
+  }
+  
+  .navbar-default h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 16px;
+  }
+  
+  /*===== Logo =====*/
+  .logo-box {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  
+  /*===== 下拉選單三角箭頭 =====*/
+  #menu-4:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+  }
+  
+  /*===== Footer 页脚 =====*/
+  .footer {
+    text-align: center;
+    min-height: 175px; /* 最小高度 */
+    background-color: #263238;
+    padding: 15px 0;
+    color: #fff;
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #ddd;
+  }
+  
+  .footer a:hover,
+  .footer a:active,
+  .footer a:focus {
+    color: #0070DE;
+  }
+  
+  /*===== 首页通用设置 =====*/
+  .welcome-box h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .welcome-box .short-line {
+    background: #0070DE;
+    margin: 15px auto 30px auto;
+    width: 150px;
+    height: 1.5px;
+  }
+  
+  .welcome-box .btn-push {
+    /* 注意：此處先設定透明背景，但隨後被覆蓋為紅色 */
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  
+  /*===== Intro 首页-广告轮播 =====*/
+  .intro-box .item h3 {
+    margin-top: -45%; /* 标题高度 */
+    font-size: 50px;   /* 文字大小 */
+    letter-spacing: 5px; /* 文字间距 */
+  }
+  
+  .intro-box .item p {
+    font-size: 20px;
+  }
+  
+  .intro-box .item img {
+    width: 100%;
+  }
+  
+  .intro-box .carousel-control span {
+    margin-top: 145%; /* 按钮高度 */
+    font-size: 50px;   /* 按钮大小 */
+  }
+  
+  /*===== Story 首页-品牌故事 =====*/
+  .story-box {
+    background-color: #fff;
+    text-align: center;
+    padding: 25px 62.5px 50px 62.5px; /* 区块间隔 */
+  }
+  
+  .story-box h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .story-box p {
+    color: #333;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .story-box img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .story-box hr {
+    height: 1.5px;
+    background-color: #666;
+  }
+  
+  /*===== Service 首页-服务优势 =====*/
+  .service-box {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 25px 62.5px 50px 62.5px;
+  }
+  
+  .service-box img {
+    width: 100px;
+  }
+  
+  .service-box .box {
+    margin: 0 25px;
+  }
+  
+  .service-box .box h3 {
+    font-size: 18px;
+  }
+  
+  .service-box .box p {
+    color: #666;
+    line-height: 24px;
+    margin-top: 25px;
+    text-align: justify;
+  }
+  
+  /*===== Categories 首页-商品分类 =====*/
+  .categories-box {
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .categories-box img {
+    width: 300px;
+  }
+  
+  .categories-box .category-content {
+    padding: 50px 0 0 0;
+  }
+  
+  .categories-box .category-content h3 {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  
+  .categories-box .category-content p {
+    padding: 0 62.5px 50px;
+    text-align: justify;
+    color: #666;
+  }
+  
+  /*===== Show 首页-推荐商品 =====*/
+  .show-box {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .show-box img {
+    width: 100%;
+  }
+  
+  .show-box .box {
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px #888;
+  }
+  
+  .show-box .box:hover {
+    opacity: 0.6;
+  }
+  
+  .show-box .content {
+    margin-top: 15px;
+    color: #000;
+  }
+  
+  /*===== Feedback 首页-用户反馈 =====*/
+  .feedback-box {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0 125px;
+  }
+  
+  .feedback-box .item strong {
+    margin-top: 25px;
+    color: #4A6BB5;
+  }
+  
+  .feedback-box .item img {
+    width: 80px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+  }
+  
+  .feedback-box .item p {
+    color: #666;
+    max-width: 550px;
+    margin: 0 auto 25px;
+  }
+  
+  .feedback-box .carousel-indicators {
+    bottom: -70px;
+  }
+  
+  .feedback-box .carousel-indicators li {
+    background-color: #ddd;
+    height: 12.5px;
+    width: 12.5px;
+    margin: 0 5px;
+    border-radius: 0;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .feedback-box .carousel-indicators li.active {
+    background-color: #4A6BB5;
+  }
+  
+  /*===== Brands 首页-合作伙伴 =====*/
+  .brand-box {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .brand-box img {
+    margin: 10px 15px;
+    width: 150px;
+  }
+  
+  /*===== Push 首页-立即购买 =====*/
+  .push-box {
+    text-align: center;
+    padding: 75px 0 0;
+    height: 200px;
+    background: url("start.jpg") no-repeat scroll top center / cover;
+  }
+  
+  /* --- Google Map --- */
+  #map {
+    width: 80%;
+    height: 450px;
+    margin: 40px auto;
+  }
+  
+  #mapw img {
+    width: 100%;
+    height: 450px;
+    margin: 40px;
+  }
+  
+  /* =============== Contact Controller Styles =============== */
+  .contact {
+    margin: 20px;
+    box-sizing: border-box;
+  }
+  
+  .common-width {
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .read-width {
+    padding-top: 50px;
+  }
+  
+  /* =============== Process Controller Styles =============== */
+  .how-it-work-header img {
+    margin-top: 50px;
+    max-width: 80%;
+    vertical-align: middle;
+    border: 0;
+  }
+  
+  .text-center {
+    padding-top: 50px;
+  }
+  
